@@ -2,6 +2,7 @@ import { fetchBooksOfCategory } from './api.js';
 import { createBookCard } from './book-popup';
 import { el } from './refs.js';
 import { showLoader, hideLoader } from './loader.js';
+import background_error from '../images/background_error.png';
 import Swal from 'sweetalert2';
 
 /**
@@ -57,7 +58,7 @@ function styleSectionTitle(title) {
 
 function createMarkupCategory(arr) {
   return arr
-    .map(({ author, title, book_image, _id }) => {
+    .map(({ author, title, book_image = background_error, _id }) => {
       return `<li class="card-wrapper  js-book-on-click" data-id="${_id}">
                  <div class="selected-category-img-box">
                    <img class="selected-category-img" src="${book_image}" 
