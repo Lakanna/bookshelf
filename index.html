@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Bookshelf</title>
+    <link rel="shortcut icon" href="/it-frogs-tp-02/assets/favicon-7a74741b.svg" type="image/svg" />
+
+    <!-- Normailzer -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    /> -->
+
+    <!--  Project styles -->
+    
+
+    <!-- Toggle button dor light-dark theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/it-frogs-tp-02/assets/vendor-ebbe3804.js"></script>
+    <script type="module" crossorigin src="/it-frogs-tp-02/assets/btn-scroll-up-feba65b9.js"></script>
+    <link rel="stylesheet" href="/it-frogs-tp-02/assets/vendor-b3ce9496.css">
+    <link rel="stylesheet" href="/it-frogs-tp-02/assets/btn-scroll-up-e44b99de.css">
+  </head>
+  <body id="index">
+    <header class="header-section section">
+      <div class="header-container container">
+        <div class="nav-container">
+  <a class="header-logo" href="index.html" aria-label="Bookshelf home page">
+    <svg class="header-logo-icon">
+      <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-logo-1"></use>
+    </svg>
+    <svg class="header-logo-title">
+      <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-Bookshelf-1"></use>
+    </svg>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="nav-item auth-link visually-hidden">
+      <a href="shopping-list.html"> Shopping list </a>
+      <svg class="nav-shoppinglist-icon">
+        <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-uil_cart"></use>
+      </svg>
+    </li>
+  </ul>
+  <div class="tgl-btn">
+  <div class="tgl-btn__indicator">
+    <div class="tgl-btn__icon-container">
+      <i class="tgl-btn__icon fa-solid fa-sun"></i>
+    </div>
+  </div>
+</div>
+
+  <div class="auth-button-box">
+    <button class="menu-auth sign-up" type="button">
+      <span class="menu-username3">Sign up</span>
+      <svg class="menu-auth-icon-arrow">
+        <use
+          href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+    <button
+      class="menu-auth sign-out visually-hidden"
+      type="button"
+      aria-label="signed-username"
+    >
+      <img
+        class="menu-auth-logo"
+        src="data:image/png;base64,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"
+        alt="user logo"
+      />
+      <span class="menu-username user-signed"></span>
+      <svg class="menu-auth-icon auth-down">
+        <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-down-1"></use>
+      </svg>
+      <svg class="menu-auth-icon auth-up">
+        <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-fi-ss-caret-up-1"></use>
+      </svg>
+    </button>
+    <button class="menu-auth js-logout visually-hidden" type="button">
+      <span class="menu-username2">Log out</span>
+      <svg class="menu-auth-icon-arrow">
+        <use
+          href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+  </div>
+
+  <button class="nav-mobile-menu" type="button" aria-label="open-mobile-menu">
+    <svg class="burger" width="28" height="28">
+      <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-burger-1"></use>
+    </svg>
+    <svg class="close-burger" width="28" height="28">
+      <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-close-1"></use>
+    </svg>
+  </button>
+</div>
+
+      </div>
+    </header>
+
+    <main class="main-section section">
+      <div class="main-container container">
+        <div class="sidebar">
+          <div class="categories-container">
+            <div class="main-categories-box">
+  <ul class="main-categories-list"></ul>
+</div>
+
+          </div>
+          <div class="support-container">
+            <div class="support-left">
+    <div class="support-container-wrap">
+        <div class="support-wraper">
+            <h2 class="support-title">Support Ukraine</h2>
+            <svg class="support-coat-of-arms" width="20" height="32">
+                <use href="/it-frogs-tp-02/assets/icons-8928e926.svg#coat-of-arroms"></use>
+            </svg>
+        </div>
+        <ul class="support-list js-suport-list"></ul>
+        <div class="support-arrow-wrap">
+            <span class="support-arrow support-arrow-up visually-hidden">
+                <svg class="support-button" width="12" height="20">
+                    <use href="/it-frogs-tp-02/assets/icons-8928e926.svg#small-arrow-up"></use>
+                </svg>
+            </span>
+            <span class="support-arrow support-arrow-down">
+                <svg class="support-button" width="12" height="20">
+                    <use href="/it-frogs-tp-02/assets/icons-8928e926.svg#small-arrow-down"></use>
+                </svg>
+            </span>
+        </div>
+    </div>
+</div>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="loader-overlay">
+  <div class="book-loader">
+    <div class="inner">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+
+          <div class="content"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <button id="open-mobile-menu" data-modal="1" type="button">Мобильное меню</button> -->
+<!-- <div class="mobile-menu-container"></div> -->
+
+<div class="js-mobile-menu visually-hidden" data-modal="1">
+  <div class="mob-menu-container">
+    <button class="mob-menu-auth mob-sign-up" type="button">
+      <span class="mob-menu-user">Sign up</span>
+      <svg class="mob-menu-auth-icon">
+        <use
+          href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+    <button class="mob-menu-auth-signed mob-sign-in" type="button">
+      <img
+        class="mob-menu-auth-logo"
+        src="data:image/png;base64,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"
+        alt="user logo"
+      />
+      <span class="mob-menu-username mob-user-signed"></span>
+    </button>
+    <ul class="mob-nav-menu">
+      <li class="mob-nav-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="mob-nav-item mob-auth-link visually-hidden">
+        <a href="shopping-list.html"> Shopping list </a>
+        <svg class="nav-shoppinglist-icon">
+          <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-uil_cart"></use>
+        </svg>
+      </li>
+    </ul>
+    <button class="button-log-out" type="button">
+      Log out<svg class="mob-log-out-icon">
+        <use
+          href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+    <div class="wrap-image"></div>
+  </div>
+</div>
+
+    <div class="auth-modal visually-hidden">
+  <div class="auth-splat"></div>
+  <div class="auth-container">
+    <button class="auth-logout visually-hidden" type="button">LogOut</button>
+    <button class="auth-close-btn" type="button" aria-label="close-auth-menu">
+      <svg class="auth-close-icon" width="28" height="28">
+        <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-close-1"></use>
+      </svg>
+    </button>
+    <form class="auth-form">
+      <div class="auth-form-container">
+        <div class="auth-field-input">
+          <input
+            type="text"
+            class="auth-input"
+            id="auth-name"
+            placeholder="NAME"
+          />
+        </div>
+        <div class="auth-field-input">
+          <input
+            type="email"
+            class="auth-input"
+            id="auth-email"
+            placeholder="EMAIL"
+          />
+          <svg class="auth-input-icon">
+            <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-mail-1"></use>
+          </svg>
+        </div>
+        <div class="auth-field-input">
+          <input
+            type="password"
+            class="auth-input"
+            id="auth-password"
+            placeholder="PASSWORD"
+            required
+          />
+          <svg class="auth-input-icon locked-pass-icon">
+            <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-lock-1"></use>
+          </svg>
+          <svg class="auth-input-icon opened-pass-icon visually-hidden">
+            <use href="/it-frogs-tp-02/assets/header-defs-25370a32.svg#icon-lock-unlocked"></use>
+          </svg>
+        </div>
+      </div>
+      <button class="auth-sign auth-sign-up visually-hidden" type="button">
+        sign up
+      </button>
+      <button class="auth-sign auth-sign-in" type="button">sign in</button>
+      <div class="auth-toggler">
+        <button class="auth-toggler auth-toggler-sign-up" type="button">
+          sign up
+        </button>
+        <button
+          class="auth-toggler auth-toggler-sign-in auth-toggler-active"
+          type="button"
+        >
+          sign in
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <button id="scrollToTopButton" class="btn-scroll-up">
+  <svg class="scroll-up" width="24" height="24">
+    <use href="/it-frogs-tp-02/assets/scroll-defs-f04b8702.svg#icon-scroll-up"></use>
+  </svg>
+</button>
+
+
+    <!-- Load JS file -->
+    
+  </body>
+</html>
