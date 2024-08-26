@@ -1,0 +1,30 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
+@import url('./reset.css');
+@import url('./global-styles.css');
+
+@import url('./header.css');
+@import url('./mobile-menu.css');
+
+@import url('./category-list-sec.css');
+@import url('./support-ukraine-sec.css');
+
+@import url('./top-books-sec.css');
+@import url('./selected-category-sec.css');
+@import url('./shopping-list-sec.css');
+
+@import url('./auth-popup.css');
+@import url('./book-popup.css');
+@import url('./btn-scroll-up.css');
+@import url('./loader.css');
+
+@import url('./theme-dark-light.css');
+@import url('./theme-light.css');
+@import url('./theme-dark.css');

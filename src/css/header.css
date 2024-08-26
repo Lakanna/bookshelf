@@ -1,0 +1,247 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px 0;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: flex;
+  width: 109px;
+  height: 28px;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header-logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header-logo-title {
+  width: 77px;
+  height: 13px;
+  stroke: var(--col-black);
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-shoppinglist-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.auth-button-box {
+  display: none;
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+.menu-auth {
+  display: flex;
+  width: 184px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  background: var(--col-blue);
+  border-radius: 36px;
+  padding: 4px 12px;
+}
+
+.js-logout {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  color: var(--col-black);
+  background: var(--col-white);
+  z-index: 1;
+}
+
+.menu-auth-logo {
+  width: 37px;
+  height: 37px;
+  margin-right: 9px;
+  border: 1px solid var(--col-black);
+}
+
+.menu-username {
+  margin-right: 4px;
+}
+
+.menu-username2,
+.menu-username3 {
+  font-family: DMSans;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+.menu-username2 {
+  color: var(--col-black);
+}
+.menu-username3 {
+  color: var(--col-white);
+}
+
+.menu-auth-icon {
+  width: 23px;
+  height: 26px;
+  fill: var(--col-white);
+}
+
+.menu-auth-icon-arrow {
+  width: 23px;
+  height: 26px;
+  stroke: #eac645;
+}
+
+.nav-mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  margin-left: 14px;
+  background: var(--col-white);
+}
+.burger {
+  stroke: var(--col-black);
+  fill: var(--col-white);
+  cursor: pointer;
+  transition: stroke 0.4s ease-in-out;
+}
+.burger:hover,
+.burger:focus {
+  stroke: var(--col-blue);
+}
+.close {
+  stroke: var(--col-black);
+  fill: var(--col-white);
+  cursor: pointer;
+  transition: stroke 0.4s ease-in-out;
+}
+.close:hover,
+.close:focus {
+  stroke: var(--col-blue);
+}
+/*============================|Tablet media|===========================*/
+@media screen and (min-width: 768px) {
+  .nav-container {
+    max-width: 768px;
+    padding: 14px 0;
+  }
+  .header-logo {
+    margin-right: 40px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 36px;
+    text-align: left;
+    color: var(--col-black);
+    font-family: DMSans-Medium;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+  }
+  .nav-item:hover,
+  .nav-item:focus {
+    color: var(--col-blue);
+  }
+
+  .active-page {
+    background: var(--col-yellow);
+    font-family: DMSans-Bold;
+    color: var(--col-black);
+  }
+
+  .nav-shoppinglist-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+  }
+
+  .auth-button-box {
+    position: relative;
+    display: block;
+    margin-left: 24px;
+  }
+  .menu-auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 184px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 18px;
+    border: 1.5px solid var(--col-black);
+    padding: 0 12px;
+  }
+
+  .menu-auth-logo {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin-right: 9px;
+  }
+
+  .menu-username {
+    color: var(--col-white);
+    font-family: DMSans-Bold;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin-right: 4px;
+  }
+  .menu-username2,
+  .menu-username3 {
+    font-family: DMSans-Medium;
+    font-size: 14px;
+  }
+
+  .menu-auth-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--col-white);
+  }
+
+  .nav-mobile-menu {
+    display: none;
+  }
+}
+
+/*============================|Desktop media|===========================*/
+
+@media screen and (min-width: 1440px) {
+  .nav-container {
+    max-width: 1440px;
+    padding: 14px 0;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+}

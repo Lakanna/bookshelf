@@ -1,0 +1,73 @@
+.main-categories-box {
+  display: block;
+  overflow-y: scroll;
+  height: 228px;
+}
+
+.main-categories-box::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+.main-categories-box::-webkit-scrollbar-track {
+  background-color: transparent;
+
+  /* дорожка (индикатор выполнения) полосы прокрутки,
+    где поверх белой полосы находится серая полос */
+}
+
+.main-categories-box::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 114px;
+  border-radius: 12px;
+  background: #e0e0e0;
+}
+
+/* перетаскиваемый маркер прокрутки */
+
+.main-categories-list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main-categories-list {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: DMSans-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.5%;
+  letter-spacing: -0.32px;
+}
+
+.main-categories-list-item {
+  cursor: pointer;
+}
+
+.main-categories-list-item-active {
+  color: #4f2ee8;
+  font-family: DMSans-Bold;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .main-categories-box {
+    height: 472px;
+  }
+
+  .main-categories-list {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 133.333%;
+    letter-spacing: -0.36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-categories-list {
+    gap: 24px;
+  }
+}

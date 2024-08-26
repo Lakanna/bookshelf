@@ -1,0 +1,398 @@
+.shopping-title {
+  font-family: DMSans-Bold;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 375px) {
+  .shopping-title {
+    font-size: 32px;
+    line-height: 1.1875;
+    letter-spacing: -1.28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopping-title {
+    font-size: 48px;
+    line-height: 1.083;
+    letter-spacing: -1.92px;
+  }
+}
+
+.accent {
+  color: var(--col-blue);
+}
+
+.shopping-book-card {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  height: auto;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 335px;
+  padding: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .shopping-book-card {
+    max-width: 704px;
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .shopping-book-card {
+    max-width: 996px;
+  }
+}
+
+.shopping-book-cover {
+  width: 100px;
+  height: 142px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-book-cover {
+    width: 116px;
+    height: 165px;
+  }
+}
+
+.image-thumb {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .image-thumb {
+    max-width: 116px;
+    max-height: 165px;
+  }
+}
+
+.shopping-book-title {
+  position: absolute;
+  font-family: DMSans-Bold;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  left: 128px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-book-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 37%;
+    max-width: 123px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopping-book-title {
+    top: 24px;
+    left: 164px;
+  }
+}
+
+.shopping-book-category {
+  position: absolute;
+  font-family: DMSans-Regular;
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.36px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-book-category {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 128px;
+    top: 36px;
+    width: 43%;
+    max-width: 144px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopping-book-category {
+    top: 46px;
+    left: 164px;
+  }
+}
+
+.shopping-book-description {
+  position: absolute;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: DMSans-Regular;
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.56px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-book-description {
+    width: 50%;
+    max-width: 178px;
+    max-height: 68px;
+    left: 128px;
+    top: 58px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopping-book-description {
+    margin-bottom: 48px;
+    max-width: 508px;
+    left: 164px;
+    top: 74px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .shopping-book-description {
+    max-width: 808px;
+  }
+}
+
+.shopping-book-author {
+  position: absolute;
+  font-family: DMSans-Regular-Italic;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: -0.48px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-book-author {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    bottom: 14px;
+    left: 128px;
+    width: 29%;
+    max-width: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopping-book-author {
+    bottom: 24px;
+    left: 164px;
+  }
+}
+
+.delete-btn {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  position: absolute;
+  background-color: var(--col-blue);
+  stroke: var(--col-white);
+  fill: var(--col-blue);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .delete-btn {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    top: 24px;
+    right: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .delete-svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.trade-fairs {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  bottom: 14px;
+  right: 14px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .trade-fairs {
+    bottom: 24px;
+    right: 24px;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.amazon-img {
+  transition: filter 0.3s ease;
+  width: 32px;
+  height: 11px;
+}
+@media screen and (min-width: 768px) {
+  .amazon-img {
+    width: 48px;
+    height: 15px;
+  }
+}
+
+.apple-books-img {
+  transition: filter 0.3s ease;
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 768px) {
+  .apple-books-img {
+    width: 28px;
+    height: 27px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.empty-page {
+  margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  .empty-page {
+    margin-top: 140px;
+  }
+}
+
+.page-notification {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: DMSans-Regular;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.36px;
+  margin-bottom: 14px;
+  width: 244px;
+}
+@media screen and (min-width: 768px) {
+  .page-notification {
+    margin-bottom: 20px;
+    width: 349px;
+  }
+}
+
+.notification-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 265px;
+}
+@media screen and (min-width: 768px) {
+  .notification-image {
+    width: 322px;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .pagination-container {
+    gap: 24px;
+  }
+}
+
+#pagination-numbers {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .nav-buttons,
+  #pagination-numbers {
+    gap: 10px;
+  }
+}
+
+.pagination-number {
+  background-color: transparent;
+  font-family: DMSans-Bold;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.pagination-number,
+.pagination-button {
+  border-style: solid;
+  border-width: 1.5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.pagination-button {
+  padding: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pagination-number,
+  .pagination-button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow-svg {
+  flex-shrink: 0;
+}
+.to-end-svg,
+.to-start-svg {
+  position: absolute;
+}
+.start-1,
+.end-1 {
+  top: 8px;
+  left: 4px;
+}
+@media screen and (min-width: 768px) {
+  .start-1,
+  .end-1 {
+    top: 10px;
+    left: 7px;
+  }
+}
+
+.start-2,
+.end-2 {
+  top: 8px;
+  right: 5px;
+}
+@media screen and (min-width: 768px) {
+  .start-2,
+  .end-2 {
+    top: 10px;
+    right: 7px;
+  }
+}

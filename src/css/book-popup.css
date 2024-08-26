@@ -1,0 +1,189 @@
+.popup-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  justify-content: space-between;
+  max-width: 335px;
+  max-height: 90vh;
+  border-radius: 18px;
+  border: 2px solid;
+  padding: 40px 24px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.popup-cover {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.popup-title {
+  font-family: DMSans-Bold;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: -0.04em;
+  margin-bottom: 4px;
+}
+
+.popup-author {
+  font-family: DMSans-Regular-Italic;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+
+.popup-descr {
+  font-family: DMSans-Regular;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  margin-bottom: 14px;
+}
+
+.popup-store-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.popup-store .popup-store-amazon {
+  width: 62px;
+}
+
+.popup-store .popup-store-apple {
+  width: 33px;
+}
+
+.popup-shopping-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.popup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid;
+  font-size: 14px;
+  font-family: DMSans-Bold;
+  text-transform: uppercase;
+  line-height: 1.29;
+  min-width: 215px;
+  min-height: 50px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.popup-button:hover {
+  transform: scale(1.05);
+}
+
+.popup-under-button {
+  text-align: center;
+  font-family: DMSans-Regular;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.popup-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.popup-close-button:hover,
+.popup-close-button:focus {
+  border: none;
+}
+
+/**
+  |============================
+  | 768
+  |============================
+*/
+
+@media only screen and (min-width: 768px) {
+  .popup-modal {
+    min-width: 583px;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .popup-info {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .popup-cover {
+    min-width: 192px;
+    max-width: 192px;
+  }
+
+  .popup-title {
+    font-family: DMSans-Bold;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 8px;
+    padding-right: 2px;
+  }
+
+  .popup-author {
+    font-family: DMSans-Regular-Italic;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
+    margin-bottom: 20px;
+  }
+
+  .popup-descr {
+    margin-bottom: 20px;
+  }
+
+  .popup-button {
+    font-size: 18px;
+    line-height: 1.33;
+
+    min-width: 503px;
+    min-height: 68px;
+  }
+
+  .popup-under-button {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .popup-close-button {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    border: none;
+  }
+
+  .popup-icon {
+    width: 14px;
+    height: 14px;
+  }
+}

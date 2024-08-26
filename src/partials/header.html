@@ -1,0 +1,67 @@
+<div class="nav-container">
+  <a class="header-logo" href="index.html" aria-label="Bookshelf home page">
+    <svg class="header-logo-icon">
+      <use href="/images/header/header-defs.svg#icon-logo-1"></use>
+    </svg>
+    <svg class="header-logo-title">
+      <use href="/images/header/header-defs.svg#icon-Bookshelf-1"></use>
+    </svg>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="nav-item auth-link visually-hidden">
+      <a href="shopping-list.html"> Shopping list </a>
+      <svg class="nav-shoppinglist-icon">
+        <use href="/images/header/header-defs.svg#icon-uil_cart"></use>
+      </svg>
+    </li>
+  </ul>
+  <load ="partials/theme-dark-light.html" />
+  <div class="auth-button-box">
+    <button class="menu-auth sign-up" type="button">
+      <span class="menu-username3">Sign up</span>
+      <svg class="menu-auth-icon-arrow">
+        <use
+          href="/images/header/header-defs.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+    <button
+      class="menu-auth sign-out visually-hidden"
+      type="button"
+      aria-label="signed-username"
+    >
+      <img
+        class="menu-auth-logo"
+        src="/images/header/foto.png"
+        alt="user logo"
+      />
+      <span class="menu-username user-signed"></span>
+      <svg class="menu-auth-icon auth-down">
+        <use href="/images/header/header-defs.svg#icon-down-1"></use>
+      </svg>
+      <svg class="menu-auth-icon auth-up">
+        <use href="/images/header/header-defs.svg#icon-fi-ss-caret-up-1"></use>
+      </svg>
+    </button>
+    <button class="menu-auth js-logout visually-hidden" type="button">
+      <span class="menu-username2">Log out</span>
+      <svg class="menu-auth-icon-arrow">
+        <use
+          href="/images/header/header-defs.svg#icon-arrow-narrow-right-1"
+        ></use>
+      </svg>
+    </button>
+  </div>
+
+  <button class="nav-mobile-menu" type="button" aria-label="open-mobile-menu">
+    <svg class="burger" width="28" height="28">
+      <use href="/images/header/header-defs.svg#icon-burger-1"></use>
+    </svg>
+    <svg class="close-burger" width="28" height="28">
+      <use href="/images/header/header-defs.svg#icon-close-1"></use>
+    </svg>
+  </button>
+</div>
