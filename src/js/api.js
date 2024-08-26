@@ -34,7 +34,7 @@ async function fetchBooksOfCategory(category) {
     .then(resp => resp.data);
   return resp;
 }
-// fetchBooksOfCategory('Childrens Middle Grade Hardcover');
+//  fetchBooksOfCategory('Childrens Middle Grade Hardcover');
 
 /**
  * функція приймає ID обраної книги у форматі стрінги і повертає масив інфо
