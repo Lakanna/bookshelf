@@ -1,40 +1,41 @@
 # "BookShelf" Team JS Project
 
-Цей проект було створено командою "IT-Frogs"
+This project was created by the "IT-Frogs" team.
 
-## Склад команди:
+## Team members:
 
-1. Світлана Отенко, Team Lead, збірка проекту, структура сайту, загальні стилі.
+1. Svitlana Otenko, Team Lead: Project assembly, site structure, general styles.
 
-2. Андрій Довганюк Scrum Master, хедер, лоадер та авторизація
+2. Andrii Dovhaniuk, Scrum Master: Header, loader, and authentication.
 
-3. Іван Іменинник, Developer, popup вікно з карткою книжки
+3. Ivan Imenynnyk, Developer: Popup window with a book card.
 
-4. Андрій Коляденко,Developer, список категорій книжок
+4. Andrii Koliadenko, Developer: Book category list.
 
-5. Богдан Соломич,Developer, блок Support Ukraine
+5. Bohdan Solomych, Developer: Support Ukraine block.
 
-6. Руслан Афанасьєв,Developer, блок Best Sellers Books
+6. Ruslan Afanasyev, Developer: Best Sellers Books block.
 
-7. Ганна Лакус,Developer, блок книжок за обраною категорією та API запити
+7. Hanna Lakus, Developer: Books by selected category block and API requests.
 
-8. Михайло Ляур, Developer,мобільне меню
+8. Mykhailo Lyaur, Developer: Mobile menu.
 
-9. Надія Павлюченко,Developer, блок Shopping list
+9. Nadiia Pavliuchenko, Developer: Shopping list block.
 
-10. Дана Добришкіна,Developer, кнопка scroll to top, стилі тем та перемикач тем
+10. Dana Dobryshkina, Developer: Scroll to top button, theme styles, and theme
+    switcher.
 
-## Проблеми, які вирішуються розробленим застосунком:
+## Problems addressed by the developed application:
 
-1. Цей сайт дає можливість обрати книгу до вподоби. Знайти її можна у списку
-   бестселерів або у категорії, що цікавить.
-2. Натиснувши на обрану книгу, можна побачити додаткову інформацію про неї, а
-   також додати її до списку придбання.
-3. Родзинкою сайту є можливість миттєво замовити книгу в інтернет магазині.
-   Зробити це можна перейшовши за посиланням на картці книги або у списку
-   придбання.
+1. This website allows users to select a book of their choice. Books can be
+   found in the bestseller list or in the category of interest.
+2. By clicking on a chosen book, users can view additional information about it
+   and add it to their shopping list.
+3. A highlight of the site is the ability to instantly order a book from an
+   online store. This can be done by following the link on the book card or in
+   the shopping list.
 
-## Технології, що використовувались
+## Technologies used:
 
 ### Front-end
 
