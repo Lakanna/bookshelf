@@ -5,6 +5,8 @@ import { showLoader, hideLoader } from './loader.js';
 import background_error from '../images/background_error.png';
 import Swal from 'sweetalert2';
 
+const defaultImg = background_error;
+
 /**
  * Функція приймає параметром назву категорії у вигляді стрінги, робить запит на бекенд, створює розмітку і рендерить
  * @param {string} category
@@ -58,10 +60,12 @@ function styleSectionTitle(title) {
 
 function createMarkupCategory(arr) {
   return arr
-    .map(({ author, title, book_image = background_error, _id }) => {
+    .map(({ author, title, book_image, _id }) => {
       return `<li class="card-wrapper  js-book-on-click" data-id="${_id}">
                  <div class="selected-category-img-box">
-                   <img class="selected-category-img" src="${book_image}" 
+                   <img class="selected-category-img" src="${
+                     book_image ? book_image : defaultImg
+                   }" 
                     alt="The cover of ${title}" onerror="this.onerror=null; this.src='./images/background_error.png';" />
                    <div class="selected-category-overlay">
                    <p class="selected-category-overlay-text">quick view</p>
